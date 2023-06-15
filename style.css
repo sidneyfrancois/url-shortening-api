@@ -51,6 +51,14 @@ header {
 }
 
 @media (min-width: 50rem) {
+  header {
+    justify-content: flex-start;
+  }
+
+  .menu-logo {
+    margin-right: 2rem;
+  }
+
   .nav-toggle-menu {
     display: none;
   }
@@ -63,15 +71,21 @@ header {
     color: var(--color-neutral-gray);
   }
 
-  .nav-mobile ul > li:nth-last-child(2) {
-    padding-top: initial;
-    border-top: none;
-  }
-
   .nav-mobile {
+    flex: 1;
+
     padding: initial;
     background-color: transparent;
     position: initial;
+  }
+
+  .nav-mobile ul > li:nth-last-child(3) {
+    flex: 1;
+  }
+
+  .nav-mobile ul > li:nth-last-child(2) {
+    padding-top: initial;
+    border-top: none;
   }
 
   .nav-mobile > ul {
