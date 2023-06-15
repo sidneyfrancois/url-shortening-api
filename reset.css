@@ -39,3 +39,9 @@ ul {
 a {
   text-decoration: none;
 }
+
+button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
