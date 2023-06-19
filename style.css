@@ -1,7 +1,7 @@
 @import url("properties.css");
 
 body {
-  padding: 3rem 9%;
+  padding: 3rem 6%;
   font-family: var(--font-family);
 }
 
@@ -99,6 +99,38 @@ main button {
   padding: 0.7rem 2rem;
   border-radius: 50px;
 }
+
+/* main-content container */
+
+.main-content {
+  background-color: var(--color-neutral-light-gray);
+}
+
+.main-content h2 {
+  color: var(--color-neutral-very-dark-blue);
+}
+
+/* input user part */
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+
+  padding: 1.5rem;
+  border-radius: 10px;
+  background-color: var(--color-primary-dark-violet);
+  background-image: url("images/bg-shorten-mobile.svg");
+  background-position: top right;
+  background-repeat: no-repeat;
+}
+
+.input-default-size {
+  padding: 0.8rem 1rem;
+  border-radius: 5px;
+}
+
+/* card container */
 
 @media (min-width: 50rem) {
   header {

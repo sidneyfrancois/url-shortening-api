@@ -7,6 +7,7 @@
   --color-secondary-red: hsl(0, 87%, 67%);
 
   --color-neutral-gray: hsl(0, 0%, 75%);
+  --color-neutral-light-gray: hsla(230, 25%, 95%, 1);
   --color-neutral-grayish-violet: hsl(257, 7%, 63%);
   --color-neutral-very-dark-blue: hsl(255, 11%, 22%);
   --color-neutral-very-dark-violet: hsl(260, 8%, 14%);
