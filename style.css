@@ -163,7 +163,20 @@ main button {
   gap: 6rem;
   margin: 0 6%;
   margin-top: 10rem;
-  padding-bottom: 5rem;
+  padding-bottom: 6rem;
+
+  width: min(70rem, 85%);
+}
+
+.card-presentation {
+  max-width: 30rem;
+  align-self: center;
+}
+
+.set-card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
 }
 
 .card {
@@ -178,6 +191,10 @@ main button {
   padding-top: 4rem;
 
   position: relative;
+}
+
+.card h3 {
+  margin-top: 1rem;
 }
 
 .card-icon-container {
@@ -335,6 +352,22 @@ footer ul li:first-child {
 
   button.input-default-size {
     padding: 0.7rem 2rem;
+  }
+
+  /* Card container desktop mode */
+
+  .set-card-container {
+    flex-direction: row;
+    gap: 3rem;
+  }
+
+  .card {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .card-icon-container {
+    left: 2rem;
   }
 
   /* end content desktop mode */
