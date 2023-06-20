@@ -1,7 +1,6 @@
 @import url("properties.css");
 
 body {
-  padding: 3rem 6%;
   font-family: var(--font-family);
 }
 
@@ -80,6 +79,8 @@ main button {
   flex-direction: column;
   align-items: center;
   gap: 2rem;
+
+  margin-bottom: 9rem;
 }
 
 .main-illustration {
@@ -103,11 +104,26 @@ main button {
 /* main-content container */
 
 .main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   background-color: var(--color-neutral-light-gray);
+  color: var(--color-neutral-grayish-violet);
+
+  position: relative;
 }
 
 .main-content h2 {
   color: var(--color-neutral-very-dark-blue);
+  font-size: 1.8em;
+  font-weight: var(--poppins-bold);
+}
+
+.main-content h3 {
+  color: var(--color-neutral-very-dark-blue);
+  font-size: 1.5em;
+  font-weight: var(--poppins-bold);
 }
 
 /* input user part */
@@ -123,14 +139,51 @@ main button {
   background-image: url("images/bg-shorten-mobile.svg");
   background-position: top right;
   background-repeat: no-repeat;
+
+  width: 90%;
+
+  position: absolute;
+  top: -5rem;
 }
 
 .input-default-size {
-  padding: 0.8rem 1rem;
+  padding: 0.7rem 1rem;
   border-radius: 5px;
 }
 
 /* card container */
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+  margin: 0 6%;
+  margin-top: 10rem;
+  padding-bottom: 5rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 5px;
+  padding-top: 4rem;
+
+  position: relative;
+}
+
+.card-icon-container {
+  padding: 1.5rem;
+  background-color: var(--color-neutral-very-dark-violet);
+  border-radius: 50%;
+
+  position: absolute;
+  top: -3rem;
+}
 
 @media (min-width: 50rem) {
   header {

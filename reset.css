@@ -22,6 +22,7 @@ body {
 }
 
 img,
+svg,
 video,
 canvas,
 audio,
@@ -30,6 +31,7 @@ embed,
 object {
   display: block;
   max-width: 100%;
+  box-sizing: inherit;
 }
 
 ul {
