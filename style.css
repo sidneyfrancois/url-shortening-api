@@ -89,7 +89,8 @@ main button {
   object-fit: cover;
   object-position: left;
   width: 733px;
-  height: 241px;
+  min-height: 350px;
+  max-height: 483px;
 }
 
 .header-message {
@@ -198,6 +199,8 @@ main button {
   padding: 6rem 0;
   background-color: var(--color-primary-dark-violet);
   background-image: url("images/bg-boost-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .end-content h2 {
