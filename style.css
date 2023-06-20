@@ -26,7 +26,8 @@ header {
   justify-content: space-between;
   align-items: center;
 
-  margin: 3rem 8%;
+  margin: 3rem auto;
+  width: min(70rem, 85%);
 }
 
 .nav-menu {
@@ -143,7 +144,7 @@ main button {
   background-position: top right;
   background-repeat: no-repeat;
 
-  width: 90%;
+  width: min(70rem, 85%);
 
   position: absolute;
   top: -5rem;
@@ -313,5 +314,24 @@ footer div:not(.social-media-icons) ul {
 
   .nav-menu > ul {
     flex-direction: row;
+  }
+
+  /* input user in desktop mode */
+
+  .input-container {
+    flex-direction: row;
+    padding: 3rem;
+    background-image: url("images/bg-shorten-desktop.svg");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+  }
+
+  .input-container input {
+    flex: 1;
+  }
+
+  button.input-default-size {
+    padding: 0.7rem 2rem;
   }
 }
