@@ -218,14 +218,16 @@ main button {
 /* Footer page */
 
 footer {
+  color: var(--color-neutral-gray);
+  background-color: var(--color-neutral-very-dark-violet);
+  padding: 3rem 0;
+}
+
+.footer-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 2.5rem;
-
-  color: var(--color-neutral-gray);
-  background-color: var(--color-neutral-very-dark-violet);
-  padding: 3rem 0;
 }
 
 footer h2 {
@@ -235,15 +237,15 @@ footer h2 {
 }
 
 footer ul li:first-child {
-  margin-bottom: 1rem;
+  margin-bottom: 1em;
 }
 
-footer ul li:not(:first-child) a {
+.footer-container ul li:not(:first-child) a {
   font-weight: var(--poppins-regular);
   color: var(--color-neutral-grayish-violet);
 }
 
-footer div:not(.social-media-icons) ul {
+.footer-container div:not(.social-media-icons) ul {
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -340,5 +342,35 @@ footer div:not(.social-media-icons) ul {
   .end-content {
     padding: 3rem 0;
     background-image: url("images/bg-boost-desktop.svg");
+  }
+
+  /* footer desktop mode */
+  footer {
+    font-size: 0.8rem;
+  }
+
+  .footer-container {
+    flex-direction: row;
+    align-items: baseline;
+    gap: 6rem;
+    /* justify-content: space-between; */
+
+    width: min(70rem, 85%);
+    margin: 0 auto;
+  }
+
+  footer ul li:first-child {
+    margin-bottom: 0;
+  }
+  .footer-container div:not(.social-media-icons) ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1em;
+  }
+
+  .footer-container h2 {
+    flex: 1;
+    text-align: left;
   }
 }
