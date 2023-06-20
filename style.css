@@ -183,6 +183,17 @@ main button {
   display: flex;
   flex-direction: column;
   gap: 6rem;
+  position: relative;
+}
+
+.set-card-container::before {
+  content: "";
+  width: 10px;
+  height: 100%;
+  top: 0;
+  right: 50%;
+  background-color: var(--color-primary-cyan);
+  position: absolute;
 }
 
 .card {
@@ -386,9 +397,25 @@ footer ul li:first-child {
     gap: 3rem;
   }
 
+  .set-card-container::before {
+    width: 100%;
+    height: 8px;
+    top: 50%;
+    right: auto;
+  }
+
   .card {
     align-items: flex-start;
     text-align: left;
+    position: relative;
+  }
+
+  .card:nth-child(2) {
+    top: 2rem;
+  }
+
+  .card:nth-child(3) {
+    top: 4rem;
   }
 
   .card-icon-container {
