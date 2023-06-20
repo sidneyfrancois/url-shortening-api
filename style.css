@@ -185,6 +185,30 @@ main button {
   top: -3rem;
 }
 
+/* end content */
+
+.end-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+
+  padding: 6rem 0;
+  background-color: var(--color-primary-dark-violet);
+  background-image: url("images/bg-boost-mobile.svg");
+}
+
+.end-content h2 {
+  font-size: 1.8em;
+  font-weight: var(--poppins-bold);
+  color: white;
+}
+
+.end-content button {
+  padding: 0.7rem 3rem;
+  border-radius: 30px;
+}
+
 @media (min-width: 50rem) {
   header {
     justify-content: flex-start;
