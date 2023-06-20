@@ -58,7 +58,7 @@ header {
 main {
   margin-top: 2rem;
   text-align: center;
-  color: var(--color-neutral-gray);
+  color: var(--color-neutral-grayish-violet);
 }
 
 h1 {
@@ -83,26 +83,34 @@ main button {
   align-items: center;
   gap: 2rem;
 
+  margin: 0 auto;
   margin-bottom: 9rem;
+  width: min(70rem, 85%);
+}
+
+.image-container {
+  /* width: min(633px, 85%); */
 }
 
 .main-illustration {
   object-fit: cover;
   object-position: left;
-  width: 733px;
-  min-height: 350px;
-  max-height: 483px;
+  /* max-width: 733px; */
+  /* min-height: 350px; */
+  /* max-height: 483px; */
 }
 
 .header-message {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 1rem;
 }
 
 .main-header button {
   padding: 0.7rem 2rem;
   border-radius: 50px;
+  margin-top: 1rem;
 }
 
 /* main-content container */
@@ -113,8 +121,6 @@ main button {
   align-items: center;
 
   background-color: var(--color-neutral-light-gray);
-  color: var(--color-neutral-grayish-violet);
-
   position: relative;
 }
 
@@ -333,6 +339,25 @@ footer ul li:first-child {
 
   .nav-menu > ul {
     flex-direction: row;
+  }
+
+  /* main header desktop mode */
+
+  .main-header {
+    flex-direction: row-reverse;
+  }
+
+  .header-message {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .header-message h1 {
+    font-size: 3.8em;
+  }
+
+  .header-message p {
+    width: 70%;
   }
 
   /* input user in desktop mode */
