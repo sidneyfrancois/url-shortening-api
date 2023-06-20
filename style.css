@@ -334,4 +334,11 @@ footer div:not(.social-media-icons) ul {
   button.input-default-size {
     padding: 0.7rem 2rem;
   }
+
+  /* end content desktop mode */
+
+  .end-content {
+    padding: 3rem 0;
+    background-image: url("images/bg-boost-desktop.svg");
+  }
 }
