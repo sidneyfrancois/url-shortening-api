@@ -279,6 +279,10 @@ footer ul li:first-child {
   color: var(--color-neutral-grayish-violet);
 }
 
+.footer-container ul li:not(:first-child) a:hover {
+  color: var(--color-primary-cyan);
+}
+
 .footer-container div:not(.social-media-icons) ul {
   display: flex;
   flex-direction: column;
@@ -290,6 +294,14 @@ footer ul li:first-child {
   gap: 2rem;
 
   margin-top: 1rem;
+}
+
+.credits {
+  margin-top: 2rem;
+}
+
+.credits a {
+  color: var(--color-primary-cyan);
 }
 
 @media (min-width: 50rem) {
