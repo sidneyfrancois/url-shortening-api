@@ -75,6 +75,14 @@ main button {
   background-color: var(--color-primary-cyan);
 }
 
+main button:hover {
+  background-color: var(--color-primary-light-cyan);
+}
+
+main button:active {
+  background-color: var(--color-primary-cyan);
+}
+
 /* header part */
 
 .main-header {
