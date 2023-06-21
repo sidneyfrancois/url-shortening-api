@@ -33,7 +33,7 @@ function createURLResultContainer(originalURL, tinyURL) {
   let buttonCopy = document.createElement('button')
   
   originalURLSpan.textContent = originalURL 
-  tinyURLSpan.textContent = 'tiny test'
+  tinyURLSpan.textContent = tinyURL 
   buttonCopy.textContent = 'copy'
   
   resultBox.appendChild(originalURLSpan)
@@ -53,14 +53,21 @@ function validateURL(url) {
   }
 }
 
-function createTinyLink() {
+async function createTinyURL(url) {
+  const res = await fetch("https://api.shrtco.de/v2/shorten?url=" + url)
+  const tinyURl = await res.json()
+  return tinyURl["result"].full_short_link
+}
+
+async function createTinyLink() {
   if (!validateURL(inputURL.value)) {
     addErrorInputStyle()
     addErrorMessage()
   } else {
     removeErrorInputStyle()
     removeErrorMessage()
-    createURLResultContainer(inputURL.value, 'testtt')
+    const tinyURL = await createTinyURL(inputURL.value);
+    createURLResultContainer(inputURL.value, tinyURL)
   }
 }
 
