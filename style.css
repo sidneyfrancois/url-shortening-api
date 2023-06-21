@@ -161,6 +161,22 @@ main button {
   border-radius: 5px;
 }
 
+.input-error {
+  border: 3px solid var(--color-secondary-red);
+}
+
+.error-msg {
+  text-align: left;
+  margin-top: -0.5rem;
+  font-style: italic;
+  font-size: 0.8em;
+  color: var(--color-secondary-red);
+}
+
+.error-msg-show {
+  display: none;
+}
+
 /* card container */
 
 .card-container {
@@ -396,6 +412,11 @@ footer ul li:first-child {
 
   .input-container input {
     flex: 1;
+  }
+
+  .error-msg {
+    position: absolute;
+    top: 75%;
   }
 
   button.input-default-size {
