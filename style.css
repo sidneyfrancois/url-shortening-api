@@ -88,16 +88,9 @@ main button {
   width: min(70rem, 85%);
 }
 
-.image-container {
-  /* width: min(633px, 85%); */
-}
-
 .main-illustration {
   object-fit: cover;
   object-position: left;
-  /* max-width: 733px; */
-  /* min-height: 350px; */
-  /* max-height: 483px; */
 }
 
 .header-message {
