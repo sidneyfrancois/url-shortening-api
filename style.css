@@ -188,18 +188,22 @@ main button {
 
 .result-box {
   display: flex;
-  align-items: baseline;
-  gap: 1rem;
+  flex-direction: column;
 
   background-color: white;
   border-radius: 5px;
-  padding: 1rem 2rem;
+  text-align: left;
+}
+
+.result-box > * {
+  margin: 0.5rem 1rem;
 }
 
 .result-box span:first-child {
   flex: 1;
-  text-align: left;
   color: var(--color-primary-dark-violet);
+  border-bottom: 1px solid var(--color-neutral-gray);
+  padding-bottom: 0.5em;
 }
 
 .result-box span:nth-child(2) {
@@ -456,6 +460,17 @@ footer ul li:first-child {
 
   button.input-default-size {
     padding: 0.7rem 2rem;
+  }
+
+  /* Result container desktop mode */
+
+  .result-box {
+    flex-direction: row;
+    align-items: baseline;
+  }
+
+  .result-box span:first-child {
+    border-bottom: none;
   }
 
   /* Card container desktop mode */
