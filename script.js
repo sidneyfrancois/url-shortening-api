@@ -32,6 +32,10 @@ function createURLResultContainer(originalURL, tinyURL) {
   let tinyURLSpan = document.createElement('span')
   let buttonCopy = document.createElement('button')
   
+  buttonCopy.addEventListener('click', () => {
+    navigator.clipboard.writeText(tinyURLSpan.textContent)
+  })
+  
   originalURLSpan.textContent = originalURL 
   tinyURLSpan.textContent = tinyURL 
   buttonCopy.textContent = 'copy'
@@ -70,6 +74,8 @@ async function createTinyLink() {
     createURLResultContainer(inputURL.value, tinyURL)
   }
 }
+
+
 
 btnToggleMenu.addEventListener("click", toggleMenu);
 btnSubmitURL.addEventListener('click', createTinyLink)
